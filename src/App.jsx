@@ -4,9 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './components/Header'
 import { Section1 } from './sections/section1'
+import { Section2 } from './sections/Section2'
+import { Section3 } from './sections/Section3'
+import { Section4 } from './sections/Section4'
+import { Section5 } from './sections/Section5'
 
 function App() {
-  const [count, setCount] = useState(0);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -31,6 +34,10 @@ function App() {
         }}
       />
       <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
       <Header />
     </main>
   )
