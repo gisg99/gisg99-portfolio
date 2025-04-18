@@ -1,25 +1,35 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
+:root {
+  font-family: "Rubik", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: rgb(17, 17, 17);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  cursor: none !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  background: -webkit-linear-gradient(#3babf6, #3d05be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 body {
@@ -35,23 +45,123 @@ h1 {
   line-height: 1.1;
 }
 
-button {
+h2{
+  font-size: 2.4em;
+  line-height: 1.1;
+}
+
+button{
+  position: relative;
+  padding: 12px 24px;
+  border: 2px solid #d8d8d8;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1e293b; /* Color base oscuro */
 }
+
 button:hover {
-  border-color: #646cff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.gradient-button {
+  position: relative;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #1e293b; /* Color base oscuro */
+}
+
+.gradient-button:before,
+.gradient-button:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 50%;
+  opacity: 0.7;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.gradient-button:before {
+  background-color: #3babf6;
+  left: -30px;
+  transform: translateY(-50%);
+  animation: spiralBlue 6s infinite linear;
+}
+
+.gradient-button:after {
+  background-color: #5413bb;
+  right: -30px;
+  transform: translateY(-50%);
+  animation: spiralPurple 6s infinite linear;
+}
+
+@keyframes spiralBlue {
+  0% {
+    transform: translateY(-50%) translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-50%) translateX(15px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-50%) translateX(30px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(-50%) translateX(15px) rotate(270deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(0) rotate(360deg);
+  }
+}
+
+@keyframes spiralPurple {
+  0% {
+    transform: translateY(-50%) translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-50%) translateX(-15px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-50%) translateX(-30px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(-50%) translateX(-15px) rotate(270deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(0) rotate(360deg);
+  }
+}
+
+.josefine{
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+.imprima{
+  font-family: "Imprima", sans-serif;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#3babf6, #3d05be);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {
@@ -61,8 +171,5 @@ button:focus-visible {
   }
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
