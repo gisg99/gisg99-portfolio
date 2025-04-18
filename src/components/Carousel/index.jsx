@@ -22,7 +22,6 @@ const Carousel = ({ elements, toRight, keyId }) => {
   }, []);
 
   useEffect(() => {
-    console.log(keyId, currentIndex);
     const interval = setInterval(() => {
       nextSlide();
     }, autoplayInterval);
