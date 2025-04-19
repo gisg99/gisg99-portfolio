@@ -11,9 +11,9 @@ const MyProjects = () => {
             ],
             image: "/img/Clinical1.png",
             images: [
+                "/img/Clinical1.png",
                 "/img/Clinical2.png",
                 "/img/Clinical3.png",
-                "/img/Clinical4.png",
                 "/img/Clinical5.png",
             ],
         },

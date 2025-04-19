@@ -25,7 +25,7 @@ function App() {
   return (
     <main>
       <div
-        className="bg-white rounded-full pointer-events-none fixed z-50"
+        className="hidden md:block bg-[#F3F3F3] rounded-full pointer-events-none fixed z-50"
         style={{
           top: position.y - 5, // centramos el punto
           left: position.x - 5,
