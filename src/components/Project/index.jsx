@@ -34,16 +34,16 @@ const Project = ({ project }) => {
             </div>
             {selectedImage !== null && (
                 <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center gap-4 bg-[#000000C7] z-40">
-                    <div className="flex items-center gap-4 w-full justify-center">
+                    <div className="flex flex-1 items-center gap-4 w-full justify-center">
                         <div onClick={prevImage} className="p-8"><img className=" w-4 invert" src="https://cdn-icons-png.flaticon.com/128/5343/5343109.png"/></div>
-                            <img src={project.images[selectedImage]} alt={project.name} className="w-3/4 h-auto rounded-md"/>
-                            <div onClick={nextImage} className="p-8"><img className=" w-4 invert rotate-180" src="https://cdn-icons-png.flaticon.com/128/5343/5343109.png"/></div>
-                        </div>
-                        <div className="flex justify-center items-center gap-2 w-full mt-4">
-                            {project.images.map((image, index) => (
-                                <div className={`${selectedImage === index ? '-translate-y-1' : ''} w-40 h-24 bg-contain rounded-md hover:-translate-y-1 duration-200`} style={{ backgroundImage: `url('${image}')`}} onClick={() => setSelectedImage(index)}></div>
-                            ))}
-                        </div>
+                        <img src={project.images[selectedImage]} alt={project.name} className="max-h-[calc(95svh-200px)] rounded-md"/>
+                        <div onClick={nextImage} className="p-8"><img className=" w-4 invert rotate-180" src="https://cdn-icons-png.flaticon.com/128/5343/5343109.png"/></div>
+                    </div>
+                    <div className="flex justify-center items-center gap-2 w-full h-auto mt-4">
+                        {project.images.map((image, index) => (
+                            <div className={`${selectedImage === index ? '-translate-y-1' : ''} w-40 h-24 bg-contain rounded-md hover:-translate-y-1 duration-200`} style={{ backgroundImage: `url('${image}')`}} onClick={() => setSelectedImage(index)}></div>
+                        ))}
+                    </div>
                     <div onClick={() => setSelectedImage(null)} className="p-8"><img className=" w-4 invert" src="https://cdn-icons-png.flaticon.com/128/1828/1828778.png"/></div>
                 </div>
             )}

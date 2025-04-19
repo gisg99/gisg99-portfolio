@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MiniSocialMedia } from "../MiniSocialMedia";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,11 @@ const Header = () => {
                         <a href="#contact"><li className="h-full flex items-center border-b-3 border-[#111111] hover:border-[#485DD8] duration-200">Contact</li></a>
                     </ul>
                 </nav>
-                <button className="hidden md:block gradient-button">Connect with me</button>
+                <div className="flex justify-center items-center gap-4">
+                    <MiniSocialMedia name="GitHub" link="https://github.com/gisg99" icon="https://cdn.simpleicons.org/github/ffffff" />
+                    <MiniSocialMedia name="Send an email" link="mailto:gisgarci2@hotmail.com" icon="https://cdn.simpleicons.org/maildotru/ffffff" />
+                    <MiniSocialMedia name="LinkedIn" link="https://www.linkedin.com/in/gisg99/" icon="https://api.iconify.design/simple-icons:linkedin.svg?color=ffffff" invert />
+                </div>
                 <div 
                     className="md:hidden flex flex-col justify-center items-center w-8 h-8"
                     onClick={toggleMenu}
