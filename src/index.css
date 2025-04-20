@@ -13,11 +13,11 @@
 }
 
 *{
-  cursor: none !important;
-  -webkit-user-select: none;
+  /* cursor: none !important; */
+  /* -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none; */
   scroll-behavior: smooth;
 }
 

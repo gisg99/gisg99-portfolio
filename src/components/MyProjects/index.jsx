@@ -1,5 +1,9 @@
 import React from "react";
 import { Project } from "../../components/Project";
+import clinical1 from "/img/Clinical1.png";
+import clinical2 from "/img/Clinical2.png";
+import clinical3 from "/img/Clinical3.png";
+import clinical5 from "/img/Clinical5.png";
 
 const MyProjects = () => {
     const projects = [
@@ -11,10 +15,10 @@ const MyProjects = () => {
             ],
             image: "/img/Clinical1.png",
             images: [
-                "/img/Clinical1.png",
-                "/img/Clinical2.png",
-                "/img/Clinical3.png",
-                "/img/Clinical5.png",
+                clinical1,
+                clinical2,
+                clinical3,
+                clinical5,                
             ],
         },
     ];
