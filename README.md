@@ -1,12 +1,33 @@
-# React + Vite
+# 💻 Gabriel Sánchez - Portafolio Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a mi portafolio!  
+Este proyecto muestra una colección de mi experiencia profesional como desarrollador, así como las tecnologías que manejo actualmente.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React.js
+- TailwindCSS
+- JavaScript
+- HTML5
+- CSS3
 
-## Expanding the ESLint configuration
+## 🛠️ Características principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Gráficas de habilidades:** Visualización de las tecnologías que manejo.
+- **Listado de tecnologías:** Breve repaso a las principales herramientas que utilizo en mis proyectos.
+- **Sección About Me:** Información sobre mi trayectoria como Ingeniero en Computación, mis primeros proyectos, y mi transición hacia el desarrollo full stack.
+- **Diseño responsive:** Adaptado para desktop y mobile usando TailwindCSS.
+
+## 🧠 Sobre mí
+
+Estudié Ingeniería en Computación en la Universidad de Guadalajara. Tengo experiencia en desarrollo frontend y full stack, trabajando con React, Angular, Vue, Laravel, Node.js y más. Siempre en búsqueda de nuevos retos y tecnologías.
+
+## 🌐 Demo
+
+[Ver Portafolio](https://gisg99.github.io/gisg99-portfolio/)
+
+## 📩 Contacto
+
+- Email: gisgarci2@hotmail.com
+- LinkedIn: [Tu perfil de LinkedIn](https://www.linkedin.com/in/gisg99/)
+- GitHub: [Tu perfil de GitHub](https://github.com/gisg99)
