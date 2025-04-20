@@ -34,7 +34,7 @@ const Technologies = () => {
     
 
     return (
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-8 md:gap-16">
             <h3 className='poppins font-medium'>Technologies</h3>
             <Carousel keyId="technologiesCarousel" elements={technologies} toRight={true}/>
             <h3 className='poppins font-medium'>Databases & Tools</h3>

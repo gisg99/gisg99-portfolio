@@ -18,7 +18,7 @@ const Project = ({ project }) => {
     }
     
     return (
-        <div className="grid grid-cols-[40%_60%] gap-12 w-full h-full">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-[40%_60%] gap-12 w-full h-full p-2 md:p-0">
             <div className="flex flex-col w-full h-full gap-12">
                 <h3 className="poppins font-medium">{project.name}</h3>
                 {project.description.map((desc, index) => {
@@ -33,7 +33,7 @@ const Project = ({ project }) => {
                 ))}
             </div>
             {selectedImage !== null && (
-                <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center gap-4 bg-[#000000C7] z-40">
+                <div className="fixed top-0 left-0 w-screen h-screen flex flex-col items-center justify-center gap-4 p-2 md:p-0 bg-[#000000C7] z-40">
                     <div className="flex flex-1 items-center gap-4 w-full justify-center">
                         <div onClick={prevImage} className="p-8"><img className=" w-4 invert" src="https://cdn-icons-png.flaticon.com/128/5343/5343109.png"/></div>
                         <img src={project.images[selectedImage]} alt={project.name} className="max-h-[calc(95svh-200px)] rounded-md"/>

@@ -3,9 +3,9 @@ import { SocialMedia } from "../components/SocialMedia";
 
 const Section5 = () => {
     return (
-        <section id="contact" className="flex flex-col justify-center items-center w-full gap-8 mt-32 rounded-md p-4">
+        <section id="contact" className="flex flex-col justify-center items-center w-full gap-8 mt-12 md:mt-32 pb-16 rounded-md p-4">
             <h1 className='poppins font-medium'>Connect with me</h1>
-            <div className="flex justify-center items-center w-full gap-4">
+            <div className="flex flex-wrap justify-center items-center w-full gap-2">
                 <SocialMedia name="Instagram" link="https://instagram.com/gabriel__sanchez99" icon="https://cdn.simpleicons.org/instagram/ffffff" />
                 <SocialMedia name="Spotify" link="https://open.spotify.com/user/p1zqw7nmzv4y5gxjjlvzx92tg?si=98f482b4eff84a1a" icon="https://cdn.simpleicons.org/spotify/ffffff" />
                 <SocialMedia name="Discord" link="https://discordapp.com/users/gabo3973" icon="https://cdn.simpleicons.org/discord/ffffff" />

@@ -5,7 +5,7 @@ const Carousel = ({ elements, toRight, keyId }) => {
   const [currentIndex, setCurrentIndex] = useState(toRight ? 0 : elements.length - 1);
   const containerRef = useRef(null);
 
-  const itemWidth = 220;
+  const itemWidth = window.innerWidth > 767 ? 220 : 152;
   const autoplayInterval = 2500;
 
   const nextSlide = () => {
@@ -72,8 +72,8 @@ const Carousel = ({ elements, toRight, keyId }) => {
             style={{ width: `${itemWidth}px` }}
           >
             <Card>
-              <img src={elm.icon} alt={elm.name} className="w-24" />
-              <h4 className="poppins font-medium">{elm.name}</h4>
+              <img src={elm.icon} alt={elm.name} className="w-14 md:w-24" />
+              <h4 className="md:text-[21px] poppins font-medium">{elm.name}</h4>
             </Card>
           </div>
         ))}

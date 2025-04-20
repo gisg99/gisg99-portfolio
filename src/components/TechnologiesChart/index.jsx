@@ -8,11 +8,11 @@ const TechnologiesChart = () => {
         { name: 'Node.js', percentage: 60, gradient: ['#3babf6', '#5413bb'] },
       ];
     return (
-        <div className="flex flex-col items-center w-full mt-8 gap-4">
+        <div className="flex flex-col items-center w-full mt-8 gap-8 md:gap-4">
             {skills.map((skill, index) => (
-                <div key={index} className="flex items-center gap-2 w-full">
+                <div key={index} className="flex flex-col-reverse md:flex-row items-center gap-2 w-full">
                     <div className="flex w-1/4 justify-between gap-2 text-gray-300">
-                        <b className="">{skill.name}</b>
+                        <b className="w-full">{skill.name}</b>
                     </div>
                     <div className="relative h-2 w-full rounded-full overflow-hidden">
                         <div 
