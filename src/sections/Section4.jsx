@@ -1,5 +1,6 @@
 import React from "react";
 import { SpotifyEmbed } from "../components/SpotifyEmbed";
+import gabo4 from "/img/gabo4.jpg";
 
 const Section4 = () => {
     return (
@@ -7,7 +8,7 @@ const Section4 = () => {
             <h1 className='poppins font-medium'>Know me</h1>
                 <div className="flex flex-col md:grid md:grid-cols-7 gap-4 w-full h-full p-2 md:p-0">
                     <div className="flex items-center justify-center col-span-3">
-                        <img src="/img/gabo4.jpg" alt="Gabriel Sánchez" className="rounded-md"/>
+                        <img src={gabo4} alt="Gabriel Sánchez" className="rounded-md"/>
                     </div>
                     <div className="flex items-center justify-center col-span-2">
                         <p className="bg-gradient-to-r from-[#3babf6] to-[#3d05be] p-2 rounded-xl rounded-br-none">Hi! My name is Gabriel Sánchez. I’m 25 years old and I was born in Guadalajara, Jalisco, Mexico. I have both Mexican and Spanish nationalities. I have lived most of my life in Mexico, but I have also visited Spain several times because my father’s family lives there. Thanks to this, I feel connected to both cultures and it has helped me see the world in different ways.</p>
